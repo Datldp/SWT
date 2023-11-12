@@ -31,7 +31,7 @@ public class TC03 {
             qtyInput.sendKeys("1000");
             TakesScreenshot beforeSC = ((TakesScreenshot) driver);
             File srcFile1 = beforeSC.getScreenshotAs(OutputType.FILE);
-            FileHandler.copy(srcFile1, new File("C:\\Users\\ibaxq\\Desktop\\Semester5\\SWT301\\code\\selenium-webdriver-java-master\\selenium-webdriver-java-master\\src\\test\\java\\image\\tc03\\Before.png"));
+            FileHandler.copy(srcFile1, new File("C:\\Users\\ibaxq\\Desktop\\SWT\\SWT\\src\\test\\java\\image\\tc03\\Before.png"));
 
             WebElement updateButton = driver.findElement(By.xpath("//button[@title='Update']"));
             updateButton.click();

@@ -18,12 +18,6 @@ public class LoginPage {
     }
 
     private final By SubmitBtn = By.cssSelector("input[type='submit']");
-    private final By CloseBtn = By.cssSelector("a[title='close'] span");
-//    private final By NavBar = By.id("nav");
-//    private final By DBSales = By.linkText("Sales");
-//    private final By Orders = By.linkText("Orders");
-//    private final By DBExport = By.id("sales_order_grid_export");
-//    private final By Export = By.cssSelector("button[title='Export']");
     //User page
     public void fillLoginPage(String email, String password) {
         WebElement emailElement = driver.findElement(By.id("email"));
@@ -48,11 +42,6 @@ public class LoginPage {
 
         WebElement clickLoginButton = driver.findElement(By.xpath("/html[1]/body[1]/div[1]/div[1]/form[1]/div[1]/div[5]/input[1]"));
         clickLoginButton.click();
-    }
-
-    public void closeMsgBox(){
-        wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        wait.until(ExpectedConditions.visibilityOfElementLocated(CloseBtn)).click();
     }
 
 }
